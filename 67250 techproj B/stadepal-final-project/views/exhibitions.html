@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sarasija Tadepalli">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Exhibitions - MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <h1>MonoMuse</h1>
+        </header>
+
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html">Buy Tickets</a>
+            <a href="checkout.html">Checkout</a>
+            <button class="icon" type="button" onclick="toggleMenu()">☰</button>
+        </nav>
+
+        <main class="main">
+            <h2>Exhibitions</h2>
+
+            <h3>Signal and Surface</h3>
+            <p>
+                This exhibition explores how digital screens, motion graphics, and projection mapping change the way audiences experience visual storytelling in gallery spaces.
+            </p>
+
+            <h3>Code / Canvas</h3>
+            <p>
+                Code / Canvas highlights artists who use algorithms, data, and generative systems to create works that blur the line between programming and visual art.
+            </p>
+
+            <h3>Featured Museum Video</h3>
+            <p>Watch a museum-related video to explore how digital experiences are changing visitor engagement.</p>
+
+            <iframe src="https://www.youtube.com/embed/WBwNw4WjV7g?si=tuQT6WnsMBYFIz0O" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </main>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
